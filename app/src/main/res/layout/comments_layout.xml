@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commentContainerFeed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/commnet_one_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/userImage1"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_1sdp"
+            android:src="@drawable/profile_placeholder" />
+
+        <LinearLayout
+            android:id="@+id/textCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/userImage1"
+            android:orientation="vertical"
+            android:padding="@dimen/_2sdp">
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/username1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/yellow_app" />
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/comment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCon"
+
+            android:layout_toRightOf="@+id/userImage1"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingRight="@dimen/_2sdp">
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_11sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageHeart1"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:padding="@dimen/_1sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_unlike" />
+
+                <customfonts.TextView_fira_sans_light
+                    android:id="@+id/likeCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comment_two_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/userImage2"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_1sdp"
+            android:src="@drawable/profile_placeholder" />
+
+        <LinearLayout
+            android:id="@+id/textCon2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toRightOf="@+id/userImage2"
+            android:orientation="vertical"
+            android:padding="@dimen/_2sdp">
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/username2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/yellow_app" />
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/comment2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="here is the comment text"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_con2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCon2"
+
+            android:layout_toRightOf="@+id/userImage2"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingRight="@dimen/_2sdp">
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 hr ago"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageHeart2"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:padding="@dimen/_1sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_unlike" />
+
+                <customfonts.TextView_fira_sans_light
+                    android:id="@+id/likeCount2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="8"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:background="#F5F5F5">
+
+
+        <customfonts.EditText_fira_sans_light
+            android:id="@+id/comment_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/send_tv"
+            android:background="@null"
+
+
+            android:focusableInTouchMode ="true"
+            android:hint="@string/write_comment"
+            android:padding="@dimen/_8sdp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_color_grey"
+            android:textSize="@dimen/_14sdp"
+
+            />
+
+        <customfonts.TextView_fira_sans_medium
+            android:id="@+id/send_tv"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/blue_bg_color"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

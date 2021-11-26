@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lines"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sendMsgContainer"
+            android:scrollbars="vertical" />
+
+
+        <RelativeLayout
+            android:id="@+id/sendMsgContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+
+            <customfonts.EditText_fira_sans_light
+                android:id="@+id/send_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/send_tv"
+                android:background="@null"
+                android:hint="Enter msg"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/_13sdp" />
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/send_tv"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/blue_bg_color"
+                android:gravity="center"
+                android:text="@string/send"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

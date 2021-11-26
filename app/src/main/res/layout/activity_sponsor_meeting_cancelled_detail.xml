@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lines"
+    tools:context=".SponsorArea.MeetingMenu.Activities.SponsorRequestDetailActivity">
+
+
+    <include layout="@layout/layout_header_back" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_header"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/show_time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_bg_color"
+                android:padding="@dimen/_8sdp"
+                android:text="12:00PMto 12:30PM"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <customfonts.TextView_fira_sans_light
+                android:layout_width="@dimen/_80sdp"
+
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@color/red"
+                android:gravity="center"
+
+                android:text="@string/cancelled"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </RelativeLayout>
+
+
+        <customfonts.TextView_fira_sans_light
+            android:id="@+id/attendee_massage_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/white"
+            android:padding="@dimen/_8sdp"
+            android:text="In at iaculis lorem. Praesent tempor dictum tellus ut molestie. Sed sed ullamcorper lorem, id faucibus odio. Duis eu nisl ut ligula cursus molestie at at dolor. Nulla est justo, pellentesque vel lectus eget, fermentum varius dui. Morbi faucibus quam sed efficitur interdum. Suspendisse in pretium magna. "
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/colorPrimaryDark"></LinearLayout>
+
+        <customfonts.TextView_fira_sans_light
+            android:id="@+id/sponsor_msg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/blue_bg_color"
+            android:padding="@dimen/_8sdp"
+            android:text="In at iaculis lorem. Praesent tempor dictum tellus ut molestie. Sed sed ullamcorper lorem, id faucibus odio. Duis eu nisl ut ligula cursus molestie at at dolor. Nulla est justo, pellentesque vel lectus eget, fermentum varius dui. Morbi faucibus quam sed efficitur interdum. Suspendisse in pretium magna. "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

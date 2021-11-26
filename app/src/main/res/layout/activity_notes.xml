@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lines"
+    tools:context=".AttendeArea.Activities.NotesActivity">
+
+    <include layout="@layout/layout_header_back" />
+
+
+    <RelativeLayout
+        android:id="@+id/container_show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/toolbar_header"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <customfonts.TextView_fira_sans_light
+            android:id="@+id/text_here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/date_Tv"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/line"
+            android:maxLines="3"
+            android:padding="@dimen/_8sdp"
+            android:text=""
+
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/_12sdp" />
+
+        <customfonts.TextView_fira_sans_light
+            android:id="@+id/date_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text=""
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="match_parent"
+            android:background="@color/orange_app"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_note_contaienr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_header"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <customfonts.TextView_fira_sans_medium
+            android:id="@+id/add_note_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/add_a_note"
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/_12sdp" />
+
+        <customfonts.TextView_fira_sans_medium
+            android:id="@+id/messageCounter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:padding="@dimen/_8sdp"
+            android:text="0/10000"
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/_12sdp" />
+
+        <customfonts.EditText_fira_sans_light
+            android:id="@+id/et_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/submit_Tv"
+            android:layout_below="@+id/add_note_tv"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/rounded_white_stroke_text_sub"
+            android:gravity="left"
+            android:hint="@string/write_some_thing"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:maxLength="10000"
+            android:padding="8dp"
+            android:text=""
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <customfonts.TextView_fira_sans_medium
+            android:id="@+id/submit_Tv"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/orange_app"
+            android:gravity="center"
+            android:text="@string/save_and_send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

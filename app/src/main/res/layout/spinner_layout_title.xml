@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp">
+
+
+    <customfonts.TextView_fira_sans_light
+        android:id="@+id/userName_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/checkbox"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/text_color_grey"
+        android:textSize="@dimen/_12sdp" />
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lines"
+    tools:context=".AttendeArea.Activities.SpeakerDeatilActivity">
+
+
+    <include layout="@layout/layout_header_back" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_header"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:elevation="@dimen/_1sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_75sdp"
+                    android:layout_gravity="bottom"
+
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/decoration1"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/speaker_detail_decoration_1" />
+
+                    <customfonts.TextView_fira_sans_bold
+                        android:id="@+id/username_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text="Shaun Linton "
+                        android:textColor="@color/blue_bg_color"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/userImage"
+
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center|top" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/blue_line_ln"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"
+                android:background="@color/blue_bg_color"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/_3sdp">
+
+                <customfonts.TextView_fira_sans_medium
+                    android:id="@+id/occupation_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+
+                    android:text="Group CIO"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <customfonts.TextView_fira_sans_medium
+                    android:id="@+id/companyName_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:text="Global Aerospace"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/_11sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"
+                android:background="@color/blue_bg_color"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:background="#EEEEEE"
+                android:visibility="gone">
+
+                <!--<customfonts.TextView_fira_sans_light-->
+                <!--android:id="@+id/speakerDetail_tv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="@dimen/_8sdp"-->
+                <!--android:text=""-->
+                <!--android:textColor="@color/text_color_grey"-->
+                <!--android:textSize="@dimen/_12sdp" />-->
+
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/mywebview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </WebView>
+
+            <LinearLayout
+                android:id="@+id/ornage_line_ln"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"
+                android:background="@color/orange_app"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/future_session_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <customfonts.TextView_fira_sans_medium
+                        android:id="@+id/fulture_session_tv"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@color/blue_bg_color"
+                        android:gravity="center"
+                        android:text="@string/sessions_with_s"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

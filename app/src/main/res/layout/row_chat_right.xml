@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_40sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+
+    android:id="@+id/rightlayout_re"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/rounded_dark_orange">
+
+    <customfonts.TextView_fira_sans_light
+        android:id="@+id/message_tv"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="@dimen/_5sdp"
+        android:text="message"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp" />
+
+    <customfonts.TextView_fira_sans_light
+        android:id="@+id/date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_tv"
+        android:gravity="right"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="date"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp" />
+
+</RelativeLayout>

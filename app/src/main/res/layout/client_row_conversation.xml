@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/profile_placeholder" />
+
+
+        <customfonts.TextView_fira_sans_medium
+            android:id="@+id/userName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/container_date"
+            android:layout_toRightOf="@+id/userImage"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/_14sdp" />
+
+        <customfonts.TextView_fira_sans_light
+            android:id="@+id/body_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName_tv"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/userImage"
+            android:text=""
+
+            android:textSize="@dimen/_12sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/container_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:visibility="gone" />
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/userImage"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black">
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lines"
+    tools:context=".AttendeArea.Activities.SingleSessionDetail">
+
+    <include layout="@layout/layout_header_back" />
+
+    <LinearLayout
+        android:id="@+id/search_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_header">
+
+        <include
+            layout="@layout/layout_search"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_con"
+
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/title_bg_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/blue_bg_color"
+                android:padding="@dimen/_5sdp">
+
+
+                <customfonts.TextView_fira_sans_medium
+                    android:id="@+id/sessionTitle_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="@string/session_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+
+            </RelativeLayout>
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/speakers_txt_tv"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentRight="true"
+                android:background="@color/yellow_app"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/speakers"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <customfonts.TextView_fira_sans_medium
+                    android:id="@+id/speakers_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+
+                    android:text="Demonic Christen, Richard Clark"
+                    android:textColor="@color/yellow_app"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <LinearLayout
+                    android:id="@+id/blue_line_ln"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="@color/blue_bg_color"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <WebView
+                android:layout_width="match_parent"
+                android:id="@+id/mywebview"
+                android:layout_height="wrap_content">
+
+            </WebView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:scrollbars="vertical" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

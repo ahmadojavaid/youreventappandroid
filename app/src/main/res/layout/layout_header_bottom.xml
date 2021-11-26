@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_45sdp"
+
+
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/bottom_bar_bg"
+    android:weightSum="3">
+
+
+    <ImageView
+        android:id="@+id/create_post_img"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/_14sdp"
+        android:src="@drawable/ic_create_post" />
+
+    <ImageView
+        android:id="@+id/my_profile_img"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/_14sdp"
+        android:src="@drawable/ic_porfile" />
+
+
+    <ImageView
+        android:id="@+id/home_tv"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="match_parent"
+
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_14sdp"
+        android:src="@drawable/ic_home" />
+
+
+</RelativeLayout>

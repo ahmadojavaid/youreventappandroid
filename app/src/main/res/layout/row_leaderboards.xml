@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_6sdp"
+    android:layout_marginRight="@dimen/_15sdp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/headerUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/profile_placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/follow_container"
+            android:layout_toRightOf="@+id/userImage"
+            android:gravity="left|center"
+            android:orientation="vertical">
+
+            <customfonts.TextView_fira_sans_medium
+                android:id="@+id/userName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#1 Shaun Linton"
+                android:textColor="@color/blue_dark"
+                android:textSize="@dimen/feed_userName_text_size" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <customfonts.TextView_fira_sans_medium
+                    android:id="@+id/jobtitle_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingRight="@dimen/_5sdp"
+
+                    android:text=""
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/_10sdp" />
+
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/companyContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/_5sdp">
+
+                <customfonts.TextView_fira_sans_medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:visibility="gone"
+                    android:text="@string/company_name_with_colon"
+                    android:textColor="@color/text_color_grey"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <customfonts.TextView_fira_sans_medium
+                        android:id="@+id/companyName_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="left"
+
+                        android:text="asdfasdfasdfasdfasdfasdfas"
+                        android:textColor="@color/orange_app"
+                        android:textSize="@dimen/feed_userName_text_time" />
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/follow_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <customfonts.TextView_fira_sans_light
+                android:id="@+id/points_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/_9sdp" />
+
+
+            <customfonts.TextView_fira_sans_medium
+                android:id="@+id/follow_tv"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@color/orange_app"
+                android:gravity="center"
+                android:text="@string/follow"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

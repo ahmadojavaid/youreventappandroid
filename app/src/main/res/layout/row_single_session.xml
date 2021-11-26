@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:layout_marginTop="@dimen/_5sdp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_3sdp">
+
+
+        <HorizontalScrollView
+            android:id="@+id/scroll_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/ic_eye"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <customfonts.TextView_fira_sans_medium
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:padding="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:text=""
+                android:textSize="@dimen/_12sdp" />
+
+        </HorizontalScrollView>
+
+
+        <ImageView
+            android:id="@+id/ic_eye"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/ic_eye" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

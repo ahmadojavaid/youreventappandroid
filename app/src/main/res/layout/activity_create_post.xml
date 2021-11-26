@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendeArea.Activities.CreatePostActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/logo_toolbar"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_1sdp"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/ic_yea" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+
+            <ImageView
+                android:id="@+id/back_img"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/back_yellow" />
+
+            <customfonts.TextView_fira_sans_medium
+                android:id="@+id/toolbar_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/noti_img"-->
+            <!--android:layout_width="@dimen/_45sdp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="@dimen/_8sdp"-->
+            <!--android:src="@drawable/ic_noti"-->
+            <!--android:visibility="visible" />-->
+
+
+            <customfonts.TextView_fira_sans_medium
+                android:id="@+id/post_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/post"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="@dimen/feed_margin_left"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/feed_margin_right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/profile_placeholder" />
+
+                <customfonts.TextView_fira_sans_medium
+                    android:id="@+id/userName_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:padding="@dimen/_8sdp"
+                    android:text="UserName"
+                    android:textColor="@color/yellow_app"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+            <customfonts.EditText_fira_sans_light
+                android:id="@+id/body_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_black_rounded"
+
+                android:gravity="left"
+                android:hint="@string/description"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <customfonts.TextView_fira_sans_medium
+                    android:id="@+id/add_photos_tv"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/yellow_app"
+                    android:gravity="center"
+                    android:text="@string/add_photos"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <customfonts.TextView_fira_sans_medium
+                    android:id="@+id/add_video_tv"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/yellow_app"
+                    android:gravity="center"
+                    android:text="@string/add_video"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:id="@+id/videoCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/video_imgview"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_centerInParent="true"
+
+                        android:src="@drawable/profile_placeholder"
+                        app:civ_border_color="@color/orange_app"
+                        app:civ_border_width="1dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:padding="@dimen/_35sdp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/play_img" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <!--<customfonts.TextView_fira_sans_medium-->
+            <!--android:id="@+id/post_tv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_40sdp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:background="@color/yellow_app"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/post"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/_13sdp"-->
+            <!--android:visibility="visible" />-->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

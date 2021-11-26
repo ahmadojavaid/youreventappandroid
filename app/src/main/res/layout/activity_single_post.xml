@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lines"
+    tools:context=".AttendeArea.Activities.SinglePostActivity">
+
+    <include layout="@layout/layout_header_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/multi_image_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/type_image_single_multi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/double_image_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/type_image_single_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/single_image_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/type_image_single_1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/triple_image_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/type_image_single_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/four_image_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/type_image_single_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/video_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/type_video_single_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include layout="@layout/type_text_post" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "25731444424",
+    "firebase_url": "https://yeaproject-63f60.firebaseio.com",
+    "project_id": "yeaproject-63f60",
+    "storage_bucket": "yeaproject-63f60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25731444424:android:3d572c06e2e0d6a0",
+        "android_client_info": {
+          "package_name": "com.jobesk.yea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25731444424-0cae906no22skmug70vatvfre5naancr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyDOhtSceiaq6UPFGhnYaLg4QgZBB_OvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
